@@ -1,5 +1,6 @@
 Shotsfired backend
 ==================
+[![Build Status](https://travis-ci.org/marhag87/shotsfired-backend.svg?branch=master)](https://travis-ci.org/marhag87/shotsfired-backend)
 
 API for Shotsfired application
 
