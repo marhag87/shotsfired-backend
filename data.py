@@ -1,3 +1,4 @@
+users = ['martin']
 event = [
   {
     "id": 0,
