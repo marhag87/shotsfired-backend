@@ -54,7 +54,7 @@ class ShotsfiredTestCase(unittest.TestCase):
         Test that the sum endpoint sums shots from a set
         """
         rv = self.APP.get('/sum/1')
-        self.assertEqual(jsonb(rv.data), [45, 46])
+        self.assertEqual(jsonb(rv.data), [42, 42, 45, 44, 42, 44, 43, 41, 46, 45, 46, 42])
 
     @mock.patch('shotsfired.session')
     def test_missing_event_sum(self, mock_session):

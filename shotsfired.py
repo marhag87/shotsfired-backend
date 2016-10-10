@@ -73,7 +73,7 @@ def get_sum(event_id):
     """
     validate_user()
     try:
-        sums = [sum(x.get('shots')) for x in event[event_id].get('sets')]
+        sums = [x.get('result') for x in event[event_id].get('sets')]
         return jsonify(sums)
     except IndexError:
         return "No such event", 404
