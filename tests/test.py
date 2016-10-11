@@ -44,7 +44,7 @@ class ShotsfiredTestCase(unittest.TestCase):
         """
         Test that missing events don't return bogus data
         """
-        rv = self.APP.get('/event/3')
+        rv = self.APP.get('/event/48')
         self.assertEqual(rv.data, b'No such event')
         self.assertEqual(rv.status_code, 404)
 
@@ -61,7 +61,7 @@ class ShotsfiredTestCase(unittest.TestCase):
         """
         Test that missing events don't return bogus data
         """
-        rv = self.APP.get('/sum/3')
+        rv = self.APP.get('/sum/100')
         self.assertEqual(rv.data, b'No such event')
         self.assertEqual(rv.status_code, 404)
 
